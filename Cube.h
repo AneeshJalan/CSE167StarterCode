@@ -25,6 +25,8 @@ public:
 	void draw();
 	void update();
 
+	void translate(glm::vec3 shiftVector);
+
 	void spin(float deg);
 };
 

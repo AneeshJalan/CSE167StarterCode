@@ -110,6 +110,12 @@ void Cube::update()
 	spin(0.1f);
 }
 
+void Cube::translate(glm::vec3 shiftVector)
+{
+	glm::mat4 t_mat = glm::translate(shiftVector);
+	model = t_mat * model;
+}
+
 void Cube::spin(float deg)
 {
 	// Update the model matrix by multiplying a rotation matrix
